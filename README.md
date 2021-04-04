@@ -5,7 +5,7 @@ libraries with a Rails Engine. In summary, the problem is that the compiled asse
 the Webpacker compilation, are not found in the test environment, as opposed to the development and production environment,
 where it works according to the documentation.
 
-### Development
+## Development
 
 **Main App - root_path**
 ![develop-main_app_root_path](app/assets/images/engine_with_webpacker/develop-main_app_root_path.png)
@@ -13,7 +13,7 @@ where it works according to the documentation.
 **Engine - root_path**
 ![develop-engine_root_path](app/assets/images/engine_with_webpacker/develop-engine_root_path.png)
 
-### Test
+## Test
 **Main App - root_path**
 ![test-main_app_root_path](app/assets/images/engine_with_webpacker/test-main_app_root_path.png)
 
