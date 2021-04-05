@@ -1,4 +1,4 @@
-# EngineWithWebpacker
+# EngineWithWebpacker [SOLVED] [fix/use_rack_static_middleware](https://github.com/DiegoOrejuela-issue-reporting/engine_with_webpacker/tree/fix/use_rack_static_middleware)
 
 This repository has the objective of highlighting a problem with the integration of the Webpacker + Rspec + Capybara
 libraries with a Rails Engine. In summary, the problem is that the compiled assets of the Rails engine, the result of
