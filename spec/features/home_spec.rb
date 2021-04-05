@@ -5,10 +5,10 @@ describe "Home workflow", type: :feature do
   describe '#home' do
     it "render success" do
       visit '/'
-      sleep  20
+      sleep  2
 
       visit EngineWithWebpacker::Engine.routes.url_helpers.root_path
-      sleep  20
+      sleep  2
     end
   end
 

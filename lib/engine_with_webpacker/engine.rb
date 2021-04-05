@@ -15,11 +15,17 @@ module EngineWithWebpacker
       )
     end
 
-
-    config.app_middleware.use(
-      Rack::Static,
-      urls: ["/engine-with-webpacker-packs"], root: "engine_with_webpacker/public"
-    )
+    if Rails.env.test?
+      config.app_middleware.use(
+          Rack::Static,
+          urls: ["/engine-with-webpacker-packs-test"], root: "#{root}/public"
+      )
+    else
+      config.app_middleware.use(
+          Rack::Static,
+          urls: ["/engine-with-webpacker-packs"], root: "#{root}/public"
+      )
+    end
 
     Gem.loaded_specs["engine_with_webpacker"].dependencies.each do |dependence|
       require dependence.name
